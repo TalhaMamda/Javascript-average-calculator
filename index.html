@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Number</title>
+</head>
+<body>
+
+    <h1>AVERAGE NUMBER CALCULATOR</h1><br>
+    <form onsubmit="calculate(); return false">
+        <label for="first">Enter 1st Number:</label>
+        <input type="number" required id="first" placeholder="Enter any number"><br>
+        <label for="second">Enter 2nd Number:</label>
+        <input type="number" required id="second" placeholder="Enter any number"><br>
+        <label for="third">Enter 3rd Number:</label>
+        <input type="number" required id="third" placeholder="Enter any number"><br>
+        <label for="fourth">Enter 4th Number:</label>
+        <input type="number" required id="fourth" placeholder="Enter any number"><br>
+        <label for="fifth">Enter 5th Number:</label>
+        <input type="number" required id="fifth" placeholder="Enter any number"><br>
+        <label for="sixth">Enter 6th Number:</label>
+        <input type="number" required id="sixth" placeholder="Enter any number"><br>
+        <label for="seventh">Enter 7th Number:</label>
+        <input type="number" required id="seventh" placeholder="Enter any number"><br>
+        <label for="eight">Enter 8th Number:</label>
+        <input type="number" required id="eight" placeholder="Enter any number"><br>
+        <label for="ninth">Enter 9th Number:</label>
+        <input type="number" required id="ninth" placeholder="Enter any number"><br>
+        <label for="tenth">Enter 10th Number:</label>
+        <input type="number" required id="tenth" placeholder="Enter any number"><br>
+        <br>
+        <button type="submit">calculate</button>
+    </form>
+    <h1 id="result"></h1>
+    <br>
+    <hr>
+    <br>
+    <script>
+        function calculate() {
+            let first = +document.querySelector("#first").value;
+            let second = +document.querySelector("#second").value;
+            let third = +document.querySelector("#third").value;
+            let fourth = +document.querySelector("#fourth").value;
+            let fifth = +document.querySelector("#fifth").value;
+            let sixth = +document.querySelector("#sixth").value;
+            let seventh = +document.querySelector("#seventh").value;
+            let eight = +document.querySelector("#eight").value;
+            let ninth = +document.querySelector("#ninth").value;
+            let tenth = +document.querySelector("#tenth").value;
+            let result = ( first + second + third + fourth + fifth + sixth + seventh + eight + ninth + tenth) / 10;
+            document.querySelector("#result").innerHTML = "Average of ten number is " + result;
+        }
+    </script>
+
+</body>
+</html>
